@@ -13,10 +13,15 @@ namespace ConsoleApp9
         {
             int[] massiv = new int[end - st + 1];
             for (int i = st, id = 0; i <= end; i++, id++)
-                massiv[id] = i * i * i;
+                massiv[id] = (int)Math.Pow(i, 3);
 
             return massiv;
         }
+        /*
+        Введите a: 5
+        Введите b: 10
+        2925
+         */
         static void PrintSum(int[] massiv)
         {
             int sum = 0;
